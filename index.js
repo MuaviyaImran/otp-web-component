@@ -29,18 +29,7 @@ class OTPInput extends HTMLElement {
             border-bottom: 1px solid #ffcf25;
             outline: none;
           }
-          .verify-btn {
-            justify-content: end;
-            display: flex;
-            margin: 10px 0;
-          }
-          .verify-btn button {
-            cursor: pointer;
-            padding: 10px 20px;
-            border: none;
-            background-color: #ffcf25;
-            border-radius: 7px;
-          }
+          
           #otp {
             height: 20px;
             display: flex;
@@ -65,9 +54,7 @@ class OTPInput extends HTMLElement {
               <input type="text" class="otpInput" maxlength="1" inputmode="numeric">
             </div>
           </form>
-          <div class="verify-btn">
-            <button id="verifyButton">Verify OTP</button>
-          </div>
+          
           <div><p id="otp"></p></div>
         </section>
       `;
