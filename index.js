@@ -61,10 +61,6 @@ class OTPInput extends HTMLElement {
 
     shadow.appendChild(template.content.cloneNode(true));
 
-    this.shadowRoot
-      .getElementById("verifyButton")
-      .addEventListener("click", this.getOTP.bind(this));
-
     const otpInputs = this.shadowRoot.querySelectorAll(".otpInput");
 
     otpInputs.forEach((input) => {
